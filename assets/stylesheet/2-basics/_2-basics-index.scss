@@ -1,0 +1,33 @@
+/*
+Basics Index
+- This File Imports All Partials (_[Name.scss]) Into This Index File
+-This File Gets Imported Into The _MASTER-DIR.scss
+- No Need To Specify File Extension SASS Is Smart It Auto Detects The File Extensions
+ */
+
+ //Importing Alert File
+ @import "alert";
+
+//Importing Body Element File
+@import "body-element";
+
+//Importing Buttons File
+@import "buttons";
+
+//Importing Forms File
+@import "forms";
+
+//Importing Image File
+@import "image";
+
+//Importing Links File
+@import "links";
+
+//Importing Sections File
+@import "section";
+
+//Importing Selection Colours File
+@import "selection-colours";
+
+//Importing Typography File
+@import "typography";

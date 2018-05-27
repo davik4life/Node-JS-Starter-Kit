@@ -1,0 +1,22 @@
+/*
+Background Image Mixin
+- Allows The Image To Be Full Width
+- The Background Image Is Also 100 Of The Vh Of The Device
+- No Variables Needed As Its Not Dynamic
+ */
+
+@mixin background-image (){
+
+  //Properties Without Browser Compatability
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+
+  //Properties With Browser Compatability For Chrome, Firefox And Opera
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  height: 100vh;
+}

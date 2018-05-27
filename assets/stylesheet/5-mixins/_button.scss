@@ -1,0 +1,20 @@
+/*
+Button  Styling
+- Variables Are Used To Make The Values Unique
+- Common Styling For Button Is Defined And Used In The Buttons Partial In Basics
+- Button Hover Is Also Defined Here
+*/
+
+@mixin button-default ($background, $width, $padding, $text-color, $margin){
+  background-color: $background;
+  width:$width;
+  padding: $padding;
+  color: $text-color;
+  margin:$margin;
+}
+
+@mixin button-hover ($decoration, $colour, $cursor){
+  text-decoration: $decoration;
+  color: $colour;
+  cursor: $cursor;
+}

@@ -1,0 +1,26 @@
+/*
+MASTER-DIR  Styling
+- Imports All Of The Indexes
+- The _MASTER-DIR Its Then Imported To The APP.scss
+- They Are Imported In Order, Other Than Mixins Which Needs To Be Firsted
+- Mixins Need To Be First Becuase Mixins Are Used In Various Sections, Mixins Cant Be Imported Last.
+- No Need To Specify File Extension SASS Is Smart It Auto Detects The File Extensions
+*/
+
+// 5. mixins index
+@import "5-mixins/5-mixins-index";
+
+// 0. plugins index
+@import "0-plugins/0-plugins-index";
+
+// 1. tools index
+@import "1-tools/1-tools-index";
+
+// 2. basics index
+@import "2-basics/2-basics-index";
+
+// 3. layouts index
+@import "3-layouts/3-layouts-index";
+
+// 4. pages index
+@import "4-pages/4-pages-index";

@@ -1,0 +1,22 @@
+/*
+Animation Mixin
+- Scale Animation With Browser Webkits For Compatability
+- Variables Are Essentialy Placeholders For Values Which Will Go There
+ */
+
+@mixin increaseSize ($animation) {
+  transform: scale($animation);
+  -webkit-transform: scale($animation);
+  -moz-transform: scale($animation);
+  -o-transform: scale($animation);
+}
+
+@mixin slidein(){
+  animation: 4s slidein forwards;
+  @keyframes slidein {
+    100% {
+      opacity: 1;
+      padding:0;
+    }
+  }
+}

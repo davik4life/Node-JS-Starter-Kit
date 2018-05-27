@@ -1,0 +1,74 @@
+/*
+Typography Styling
+- Aquired From Devtips Starter Kit (https://github.com/DevTips/DevTips-Starter-Kit/blob/master/assets/css/2-basics/_typography.sass)
+- Typography Is A Seperate File To Handle The Size Of Various Of Heading And Paragrpahs
+- By Default Headings Are Bold
+- Media Quieres Are Used To Change Size Depending On The Screen Size
+*/
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  @include text-align(center);
+}
+
+.gigantic {
+  font-size: 82.5pt;
+  line-height: 1.09;
+  letter-spacing: -2px;
+}
+
+.huge, h1 {
+  font-size: 51pt;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.large, h2 {
+  font-size: 30pt;
+  line-height: 1.14;
+}
+
+.bigger, h3 {
+  font-size: 20pt;
+  line-height: 1.38;
+}
+
+.big, h4 {
+  font-size: 16.5pt;
+  line-height: 1.38;
+}
+
+.navbar-font {
+  font-size: 15pt;
+}
+
+.small, h5 {
+  font-size: 7.5pt;
+  line-height: 1.2;
+}
+
+// Basic Text Style
+p {
+  margin: 0 0 20px 0;
+  font-size: 14pt;
+  color: $gray-700;
+}
+
+//At 767px Or Less Then....
+@media(max-width:767px) {
+  h1, h2, .huge, .large {
+  font-size: 30pt;
+  }
+
+  h3 {
+    font-size: 15pt;
+  }
+}
+
+//At 400px Or Less Then....
+@media (max-width: 400px) {
+  .large {
+    font-size: 40pt;
+  }
+}
